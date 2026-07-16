@@ -38,3 +38,12 @@ just a beating with some single delay and "global shutter".
 Uses GT generator generated single "rolling shutter" and a set of "async" per slice/row acquisitions
 as an input and recovers the position.
 
+`version007`
+
+Loads provided ground truth images and looks for solution.
+Now as an input a single "rolling shutter" image is provided (`2D_rolling_shutter.tif`)
+and a stack of async slices/rows (`2D_async.tif`). 
+Uses convolution sigma optimization (large at initial steps, smaller later).
+Can change the K modes in angle description.
+Can setup initial frequency. The cilia root is fixed and provided.
+Can set hard and soft constrains on angles.
