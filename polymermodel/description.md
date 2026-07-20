@@ -47,3 +47,13 @@ Uses convolution sigma optimization (large at initial steps, smaller later).
 Can change the K modes in angle description.
 Can setup initial frequency. The cilia root is fixed and provided.
 Can set hard and soft constrains on angles.
+
+`version009`
+
+First 3D version, loads the async data only (ground truth, `3D_data_async.tif`).
+It is possible to change the voxel size in XY and Z (+ convolution sigma value proportionally).
+Relative angle constrain + convolution sigma are changing during optimization.
+Converges to ground truth "okeyish", but data far away from the root are still not ok.
+
+
+
